@@ -1,5 +1,8 @@
 import React, { Fragment, useState } from 'react'
 
+import './App.css';
+
+import bgImage from "./assets/bg.jpeg";
 
 import Header from './components/Header'
 
@@ -17,7 +20,11 @@ function App(){
 
   return (
     <Fragment>
+      
          <Header title="Projects">
+
+         <img width={180} src={bgImage} />
+
            <ul>
              {projects.map(p => <li key={p}>{p}</li>)}
            </ul>
