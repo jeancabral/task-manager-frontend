@@ -1,9 +1,13 @@
 import React from 'react';
 
-export default function Header() {
+export default function Header(props) {
+  const { title, children} = props;
+
   return (
     <header>
-      <h1>Olá Header</h1>
+      <h1>{title}</h1>
+      {children}
    </header>
   )
+  
 }
